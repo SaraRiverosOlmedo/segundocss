@@ -1,0 +1,153 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../img/maeva-vigier-AURdnwzsrkQ-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-height: 100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+header{
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    background-color: #a5630695;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header h1 {
+    padding: 2rem 0 0 0;
+    margin: 0 1rem;
+    font-size: 45px;
+}
+.subtitles{
+    margin: 3rem 1rem 1rem 1rem;
+    overflow: hidden;
+    height: 30px;
+
+}
+ul, li{
+    list-style: none;
+}
+ul{
+    animation: slide 7s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+    width: 400px;
+    height: 30px;
+    position: relative;
+}
+li{
+    line-height: 30px;
+    top:200%;
+    font-size: 21px;
+    height: 30px;
+    line-height: 85px;
+    
+}
+li:first-child{
+    top:100%;
+}
+li:last-child{
+    top: 300%;
+}
+@keyframes slide{
+    0%{
+        transform: translateY(0%);
+    }
+    15%, 30%{
+        transform: translateY(-100%);
+    }
+    45%, 60%{
+        transform: translateY(-200%);
+    }
+    75%, 90%{
+        transform: translateY(-300%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
+main{
+    margin: 1rem 1rem 5rem 1rem;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #dad2c7b1;
+    width: 70%;
+    border-radius: 15px;
+
+}
+
+section{
+    margin: 1rem;
+    padding: 2rem 2rem 3rem 2rem ;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border: 1px solid #956926cd;
+    border-radius: 15px;
+}
+
+section:hover{
+    transform: scale(1.1);
+    transition: 2s;
+    border: 1px solid #DCD6CD;
+    background-color: #dcd6cdc2;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px 5px #704c1aa4;
+}
+.imgPlants img:last-child{
+    display: none;
+}
+.imgPlants:hover img:last-child{
+    display: block;
+}
+.imgPlants img:first-child{
+    display: block;
+}
+.imgPlants:hover img:first-child{
+    display: none;
+} 
+img{
+    height: 15rem;
+}
+.imgPlants img.imgplant1Hover{
+    cursor: pointer;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+span{
+    font-weight: 600;
+}
+footer{
+    margin-top: 2rem;
+    background-color: #704C1A;
+    color: #ffff;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+}
